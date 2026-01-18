@@ -1,5 +1,7 @@
 # fumadocs-enhanced-steps
 
+![Visual comparison of default steps versus our enhanced steps](Readme-image.png)
+
 Enhanced Steps component for [Fumadocs](https://fumadocs.dev) with support for lettered increments, custom icons, and step titles.
 
 ## Features
