@@ -27,6 +27,26 @@ The `fumadocs-enhanced-steps` package provides an enhanced Steps component with 
   </Step>
 </Steps>
 
+````mdx
+<Steps>
+  <Step title="Install the package">
+    Run the following command to install:
+    ```bash
+    npm install fumadocs-enhanced-steps
+    ```
+  </Step>
+  <Step title="Import the CSS">
+    Add the CSS import to your global styles:
+    ```css
+    @import 'fumadocs-enhanced-steps/styles/steps.css';
+    ```
+  </Step>
+  <Step title="Use in your MDX">
+    Add the components to your MDX configuration and start using them!
+  </Step>
+</Steps>
+````
+
 ## Lettered Steps (lowercase)
 
 Use `type="lower-alpha"` for lowercase letters:
@@ -42,6 +62,20 @@ Use `type="lower-alpha"` for lowercase letters:
     This is step c.
   </Step>
 </Steps>
+
+```mdx
+<Steps type="lower-alpha">
+  <Step title="First item">
+    This is step a.
+  </Step>
+  <Step title="Second item">
+    This is step b.
+  </Step>
+  <Step title="Third item">
+    This is step c.
+  </Step>
+</Steps>
+```
 
 ## Lettered Steps (uppercase)
 
@@ -59,6 +93,20 @@ Use `type="upper-alpha"` for uppercase letters:
   </Step>
 </Steps>
 
+```mdx
+<Steps type="upper-alpha">
+  <Step title="Section A">
+    Introduction and overview.
+  </Step>
+  <Step title="Section B">
+    Main content and examples.
+  </Step>
+  <Step title="Section C">
+    Summary and next steps.
+  </Step>
+</Steps>
+```
+
 ## Roman Numerals
 
 Use `type="lower-roman"` or `type="upper-roman"`:
@@ -74,6 +122,20 @@ Use `type="lower-roman"` or `type="upper-roman"`:
     The triumphant conclusion.
   </Step>
 </Steps>
+
+```mdx
+<Steps type="upper-roman">
+  <Step title="Chapter I">
+    The beginning of our journey.
+  </Step>
+  <Step title="Chapter II">
+    The challenges we face.
+  </Step>
+  <Step title="Chapter III">
+    The triumphant conclusion.
+  </Step>
+</Steps>
+```
 
 ## Custom Icons
 
@@ -94,6 +156,25 @@ Replace numbers with custom icons using the `icon` prop:
   </Step>
 </Steps>
 
+```mdx
+import { Check, Rocket, Settings, Code } from 'lucide-react';
+
+<Steps>
+  <Step title="Configure" icon={<Settings className="size-3.5" />}>
+    Set up your project configuration.
+  </Step>
+  <Step title="Develop" icon={<Code className="size-3.5" />}>
+    Write your code and components.
+  </Step>
+  <Step title="Deploy" icon={<Rocket className="size-3.5" />}>
+    Ship it to production!
+  </Step>
+  <Step title="Done" icon={<Check className="size-3.5" />}>
+    Celebrate your success!
+  </Step>
+</Steps>
+```
+
 ## Without Titles
 
 Steps work without titles too:
@@ -109,6 +190,20 @@ Steps work without titles too:
     Finally, start the development server.
   </Step>
 </Steps>
+
+```mdx
+<Steps>
+  <Step>
+    First, clone the repository.
+  </Step>
+  <Step>
+    Then, install the dependencies.
+  </Step>
+  <Step>
+    Finally, start the development server.
+  </Step>
+</Steps>
+```
 
 ## Counter Types Reference
 
