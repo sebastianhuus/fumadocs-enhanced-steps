@@ -1,3 +1,7 @@
+# deprecated. merged into https://github.com/sebastianhuus/fumadocs-components
+
+---
+
 # fumadocs-enhanced-steps
 
 ![Visual comparison of default steps versus our enhanced steps](packages/fumadocs-enhanced-steps/Readme-image.png)
